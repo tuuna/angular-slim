@@ -1,0 +1,32 @@
+<div class="result-wrap">
+    
+        <div class="result-title">
+            <div class="result-list">
+                <a href="#/stuAddition" class="btn btn-primary btn2">AddScore</a>
+            </div>
+            <div class="result-content">
+                <table class="result-tab" width="100%" ng-controller=listController>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Number</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>Operation</th>
+                    </tr>
+                    <ul ng-repeat="x in students">
+                        <td>{{x.id}}</td>
+                        <td>{{x.name}}</td>
+                        <td>{{x.number}}</td>
+                        <td>{{x.phone}}</td>
+                        <td>{{x.address}}</td>
+                        <td>
+                            <a class="link-update" href="#/stuEdition/{{x.id}}">Edit</a>
+                            <a class="link-del" ng-click="delete()" href="">Delete</a>
+                        </td>
+                        </tr>
+                    </ul>
+                </table>
+            </div>
+    </div>
+</div>

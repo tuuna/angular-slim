@@ -1,0 +1,65 @@
+<!doctype html>
+<html ng-app="anSlim">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular+Slim Demo</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+    <!--HEADER -->
+    <div class="topbar-wrap white">
+        <div class="topbar-inner clearfix">
+            <div class="topbar-logo-wrap clearfix">
+                <ul class="navbar-list clearfix">
+                    <li><a class="on" href="#">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- LEFT SIDEBAR -->
+    <div class="container clearfix">
+        <div class="sidebar-wrap">
+            <div class="sidebar-title">
+                <h1>Menu</h1>
+            </div>
+            <div class="sidebar-content">
+                <ul class="sidebar-list">
+                    <li>
+                        <a href="#"><i class="icon-font">&#xe003;</i>demo</a>
+                        <ul class="sub-menu">
+                            <li><a href="#/"><i class="icon-font">&#xe005;</i>Student</a></li>
+                        </ul>
+
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--BREADCREUMB-->
+        <div class="main-wrap">
+
+            <div class="crumb-wrap" ng-controller="breadcrumb">
+                <div class="crumb-list"><i class="icon-font"></i><a href="#">Home</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="#/">Students</a><span class="crumb-step">&gt;</span><span>{{nowoperation}}</span></div>
+            </div>
+
+            <!--MAIN-->
+            <div id="main">
+                <div ng-view></div>
+            </div>
+
+        </div>
+        <script src="js/libs/modernizr.min.js"></script>
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-route.min.js"></script>
+        <script src="js/app.js"></script>
+</body>
+
+<!-- <script type="text/javascript" src="js/controller.js"></script> -->
+
+</html>
