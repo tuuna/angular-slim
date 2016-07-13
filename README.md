@@ -1,4 +1,4 @@
-# angular-slim
+# Angular-Slim
 - Angular AND Slim 3.0 to achive a single page web application
 
 ##Slim
