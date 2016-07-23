@@ -8,7 +8,7 @@
 
 ## Rewrite
 
-To get rid of the index.php and achieve Pseudo-static,we can rewrite the conf of apache or nginx
+To get rid of the index.php and achieve Pseudo-static,we can rewrite the conf of Apache or Nginx
 
 ### Apache
 
